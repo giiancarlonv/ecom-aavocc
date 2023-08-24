@@ -1,5 +1,6 @@
 import React from 'react'
 import mobileModel1 from '../assets/logos/bg_mobile2.webp';
+import desktopModel1 from '../assets/logos/bg_desktop.webp';
 import jacket from '../assets/products/jacket.webp';
 import backpack from '../assets/products/backpack.webp';
 import shirt from '../assets/products/shirt.webp';
@@ -9,8 +10,8 @@ import denim from '../assets/products/denim.webp';
 import chinos from '../assets/products/chinos.webp';
 import totebag from '../assets/products/totebag.webp';
 
-
 export const Homepage = () => {
+  const screenWidth = window.innerWidth;
   return (
     <main>
       <section className='section1'>
@@ -19,7 +20,7 @@ export const Homepage = () => {
           <h1>aavocc</h1>
           <button>view collection</button>
         </div>
-        <img src={mobileModel1} alt="model1" />
+        <img src={screenWidth > 800 ? desktopModel1 : mobileModel1} alt="model1" />
       </section>
 
       <section className='section2'>
