@@ -104,8 +104,6 @@ export const Homepage = () => {
           </div>
         </div>
       </section>
-
-
     </main>
   )
 }

@@ -22,6 +22,47 @@ header .header-logo img, main .header-logo img {
   width: 10%;
 }
 header .header-logo .my-account, main .header-logo .my-account {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .header-logo .my-account button, main .header-logo .my-account button {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+}
+header .header-logo .my-account button img, main .header-logo .my-account button img {
+  width: 1rem;
+}
+header .header-logo .my-account .cart, main .header-logo .my-account .cart {
+  position: relative;
+}
+header .header-logo .my-account .cart span, main .header-logo .my-account .cart span {
+  right: 1rem;
+  top: 0.1rem;
+  position: absolute;
+  background: #b90504;
+  border-radius: 50%;
+  padding: 0.1rem 0.3rem;
+  font-size: 0.7em;
+  color: #F6F6F6;
+  border: none;
+}
+header .header-logo .my-account .search-bar, main .header-logo .my-account .search-bar {
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+}
+header .header-logo .my-account .search-bar input, main .header-logo .my-account .search-bar input {
+  padding: 0.5rem;
+  font-family: "Montserrat";
+}
+header .header-logo .my-account .search-bar img, main .header-logo .my-account .search-bar img {
+  width: 1rem;
+  padding: 0.5rem;
+}
+header .header-logo .my-account .search-bar.not, main .header-logo .my-account .search-bar.not {
   display: none;
 }
 header ul, main ul {
@@ -72,7 +113,7 @@ header ul li, main ul li {
 .section2 {
   border-top: 1px solid #333333;
   padding: 1rem 0;
-  margin: 1rem 0;
+  margin: 2rem 0;
   text-align: center;
 }
 .section2 h3 {
@@ -164,10 +205,15 @@ footer {
   background: #E8E8E8;
   padding: 2rem;
 }
-footer img {
-  width: 100%;
+footer .tabs {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
 }
-footer ul {
+footer .tabs img {
+  width: 50%;
+}
+footer .tabs ul {
   margin: 1rem 0;
   display: flex;
   flex-flow: column wrap;
@@ -175,7 +221,7 @@ footer ul {
   justify-content: center;
   color: #1f1e1e;
 }
-footer ul li {
+footer .tabs ul li {
   list-style: none;
   text-transform: uppercase;
   margin: 0.5rem 0;
@@ -239,7 +285,11 @@ footer .socials a {
   }
   footer {
     display: grid;
+    padding: 2rem 3rem;
     grid-template-columns: repeat(2, 1fr);
+  }
+  footer .tabs {
+    align-items: flex-start;
   }
   footer .tabs img {
     width: 70%;
