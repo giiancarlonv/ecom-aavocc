@@ -78,6 +78,14 @@ header ul li, main ul li {
   font-size: 0.9em;
   font-weight: 700;
 }
+header ul li.active, main ul li.active {
+  box-shadow: 0 2px 0 #b90504;
+  transition: 0.3s ease-in-out;
+}
+header ul a, main ul a {
+  text-decoration: none;
+  color: #1f1e1e;
+}
 
 .section1 {
   background: #dacdca;
@@ -292,7 +300,7 @@ footer .socials a {
     align-items: flex-start;
   }
   footer .tabs img {
-    width: 70%;
+    width: 50%;
   }
   footer .tabs ul {
     align-items: flex-start;

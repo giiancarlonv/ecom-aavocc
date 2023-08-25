@@ -83,6 +83,14 @@ header, main{
       font-size: .9em;
       font-weight: 700;
     }
+    li.active{
+      box-shadow: 0 2px 0  $primary;
+      transition: .3s ease-in-out;
+    }
+    a{
+      text-decoration:  none;
+      color: $font-darker;
+    }
   }
 }
 .section1{
@@ -297,7 +305,7 @@ footer{
     .tabs{
       align-items: flex-start;
       img{
-        width: 70%;
+        width: 50%;
       }
       ul{
         align-items: flex-start;
