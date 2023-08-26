@@ -9,7 +9,7 @@ export const Homepage = () => {
   const [scrollDown, setScrollDown] = useState(false);
   const handleScroll = ()=>{
     const scrollValue = document.documentElement.scrollTop;
-    scrollValue >= 100 ? setScrollDown(true) : setScrollDown(false);
+    scrollValue >= 150 ? setScrollDown(true) : setScrollDown(false);
   }
   window.addEventListener('scroll', handleScroll);
   return (
@@ -23,7 +23,7 @@ export const Homepage = () => {
         <img src={screenWidth > 800 ? desktopModel1 : mobileModel1} alt="model1" />
       </section>
 
-      <section className={scrollDown ? 'section2': 'section2 inactive'}>
+      <section className='section2'>
         <h3>popular products</h3> 
         <div className='popular-items'>
           <PopularProducts />

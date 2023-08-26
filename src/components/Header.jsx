@@ -20,7 +20,6 @@ export const Header = (props) => {
         </Link>
         
         <div>
-          
           <div className='my-account'>
             <div className={`search-bar ${isClicked || screen >= 500 ? '' : 'not'}`}>
               <input type="text" placeholder='Search...' />

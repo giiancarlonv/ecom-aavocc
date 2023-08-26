@@ -6,6 +6,7 @@
 
 body {
   font-family: "Montserrat";
+  background: #E8E8E8;
 }
 
 header, main {
@@ -57,6 +58,9 @@ header .header-logo .my-account .search-bar, main .header-logo .my-account .sear
 header .header-logo .my-account .search-bar input, main .header-logo .my-account .search-bar input {
   padding: 0.5rem;
   font-family: "Montserrat";
+  background: #F6F6F6;
+  border: none;
+  border-radius: 2px;
 }
 header .header-logo .my-account .search-bar img, main .header-logo .my-account .search-bar img {
   width: 1rem;
@@ -150,7 +154,7 @@ header ul a, main ul a {
 }
 .section2 .popular-items .items img {
   width: 100%;
-  margin-bottom: 1rem;
+  padding: 1rem 0;
 }
 .section2 .popular-items .items h5 {
   font-size: 0.8em;
@@ -163,10 +167,6 @@ header ul a, main ul a {
 }
 .section2 .popular-items .items {
   animation: evenImage 0.4s ease-in;
-}
-
-.section2.inactive {
-  display: none;
 }
 
 .section3 {
@@ -217,7 +217,7 @@ header ul a, main ul a {
 }
 
 footer {
-  background: #E8E8E8;
+  background: #F6F6F6;
   padding: 2rem;
 }
 footer .tabs {
@@ -246,7 +246,6 @@ footer .socials {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 2rem;
 }
 footer .socials span {
   font-weight: 700;
@@ -254,6 +253,15 @@ footer .socials span {
 footer .socials a {
   text-decoration: none;
   padding-left: 0.5rem;
+}
+footer .socials .social-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+footer .socials .social-icons img {
+  width: 1rem;
 }
 
 @media (min-width: 800px) {
@@ -332,6 +340,14 @@ footer .socials a {
     padding: 5rem 0;
     flex-flow: column wrap;
   }
+  footer .socials .social-icons img {
+    width: 1.3rem;
+  }
+  footer .socials .social-icons img:hover {
+    cursor: pointer;
+    transition: 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(13%) sepia(90%) saturate(3558%) hue-rotate(355deg) brightness(97%) contrast(105%);
+  }
 }
 @media (min-width: 1280px) {
   header {
@@ -348,6 +364,10 @@ footer .socials a {
   }
   .section1 {
     margin: 0 4rem;
+  }
+  .section1 img {
+    padding-right: 5rem;
+    width: 25%;
   }
   .section1 .section1-text {
     padding-left: 20%;
