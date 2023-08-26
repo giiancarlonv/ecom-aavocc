@@ -34,6 +34,19 @@ import other8 from '../assets/products/others/product8.png';
 import other9 from '../assets/products/others/product9.png';
 import other10 from '../assets/products/others/product10.png';
 
+///popular prods
+import popular1 from '../assets/products/hoodie.webp';
+import popular2 from '../assets/products/denim.webp';
+import popular3 from '../assets/products/chinos.webp';
+import popular4 from '../assets/products/totebag.webp';
+
+///featured items
+import featured1 from '../assets/products/jacket.webp';
+import featured2 from '../assets/products/backpack.webp';
+import featured3 from '../assets/products/shirt.webp';
+import featured4 from '../assets/products/pants.webp';
+import featured5 from '../data/data'
+
 const products = [{
   mens: [
     {
@@ -223,7 +236,49 @@ const products = [{
       name: 'retro forest color block sweater',
       price: 1800
     },
-  ]
+  ],
+  popular:[
+    {
+      id: 'popular1',
+      category: 'hoodie',
+      image: popular1,
+      name: 'Pullover hoodie',
+      price: 2100
+    },{
+      id: 'popular2',
+      category: 'jacket',
+      image: popular2,
+      name: 'Lightweight denim',
+      price: 1500
+    },{
+      id: 'popular3',
+      category: 'pants',
+      image: popular3,
+      name: 'Cotton tapered chinos',
+      price: 900
+    },{
+      id: 'popular4',
+      category: 'bag',
+      image: popular4,
+      name: 'Tote bag',
+      price: 2100
+    },
+  ],
+  featured:[
+    {
+      image: featured1,
+      name: 'Jackets',
+    },{
+      image: featured2,
+      name: 'Backpacks',
+    },{
+      image: featured3,
+      name: 'Shirts',
+    },{
+      image: featured4,
+      name: 'Pants',
+    },
+  ],
 }]
 
 export default products;

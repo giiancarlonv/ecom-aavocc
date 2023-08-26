@@ -19,7 +19,7 @@ header .header-logo, main .header-logo {
   padding-bottom: 0.5rem;
 }
 header .header-logo img, main .header-logo img {
-  width: 10%;
+  width: 2.5rem;
 }
 header .header-logo .my-account, main .header-logo .my-account {
   position: relative;
@@ -161,6 +161,13 @@ header ul a, main ul a {
   color: gray;
   font-size: 0.8em;
 }
+.section2 .popular-items .items {
+  animation: evenImage 0.4s ease-in;
+}
+
+.section2.inactive {
+  display: none;
+}
 
 .section3 {
   margin: 1rem 0;
@@ -253,8 +260,21 @@ footer .socials a {
   header {
     margin: 1.5rem 3rem;
   }
+  header .header-logo img {
+    width: 3rem;
+  }
   header ul {
-    margin: 1rem 2rem;
+    width: 50%;
+    margin: 1rem 0;
+  }
+  header .my-account img {
+    width: 1.5rem !important;
+  }
+  header .my-account span {
+    top: -0.3rem !important;
+    right: 1.3rem !important;
+    font-size: 1em !important;
+    padding: 0.2rem 0.5rem !important;
   }
   .section1 {
     margin: 0 2rem;
@@ -321,7 +341,10 @@ footer .socials a {
     align-items: center;
   }
   header .header-logo img {
-    width: 5%;
+    width: 3rem;
+  }
+  header ul {
+    width: 25%;
   }
   .section1 {
     margin: 0 4rem;
@@ -352,5 +375,11 @@ footer .socials a {
   }
   footer {
     padding: 2rem 5rem;
+  }
+}
+@keyframes evenImage {
+  from {
+    opacity: 0;
+    transform: translateX(150%);
   }
 }/*# sourceMappingURL=styles.css.map */

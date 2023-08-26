@@ -23,8 +23,9 @@ header, main{
     border-bottom: 1px solid $font-dark;
     padding-bottom: .5rem;
     img{
-      width: 10%;
+      width: 2.5rem;
     }
+  
     .my-account{
       position: relative;
       display: flex;
@@ -166,7 +167,13 @@ header, main{
         font-size: .8em;
       }
     }
+    .items{
+      animation: evenImage .4s ease-in 
+    }
   }
+}
+.section2.inactive{
+  display: none;
 }
 .section3{
   margin: 1rem 0;
@@ -257,8 +264,25 @@ footer{
 @media (min-width: 800px) {
   header{
     margin: 1.5rem 3rem;
+    .header-logo{
+      img{
+        width: 3rem;
+      }
+    }
     ul{
-      margin: 1rem 2rem;
+      width: 50%;
+      margin: 1rem 0;
+    }
+    .my-account{
+      img{
+        width: 1.5rem !important;
+      }
+      span{
+        top: -.3rem !important;
+        right: 1.3rem !important;
+        font-size: 1em !important;
+        padding: .2rem .5rem !important;
+      }
     }
   }
   .section1{
@@ -326,8 +350,11 @@ footer{
     .header-logo{
       align-items: center;
       img{
-        width: 5%;
+        width: 3rem;
       }
+    }
+    ul{
+      width: 25%;
     }
   }
   .section1{
@@ -361,5 +388,11 @@ footer{
   }
   footer{
     padding: 2rem 5rem;
+  }
+}
+@keyframes evenImage{
+  from{
+    opacity: 0;
+    transform: translateX(150%);
   }
 }

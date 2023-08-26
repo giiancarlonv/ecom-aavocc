@@ -1,5 +1,6 @@
 import React from 'react'
 import products from '../../data/data'
+import Masonry, {ResponsiveMasonry} from 'react-responsive-masonry'
 
 export const Mens = () => {
   const mensArray = products[0].mens;
@@ -14,6 +15,6 @@ export const Mens = () => {
           </div>
         </div>
       ))}
-    </div>
+    </div>  
   )
 }

@@ -28,32 +28,49 @@ $white: #F6F6F6;
     }
   }
   .product:nth-child(odd){
-    animation: oddImage .3s ease-in;
+    animation: oddImage .4s ease-in;
   }
   .product:nth-child(even){
-    animation: evenImage .3s ease-in;
+    animation: evenImage .4s ease-in;
   }
 }
 @keyframes oddImage {
   from{
+    opacity: 0;
     transform: translateX(-150%);
   }
 }
 @keyframes evenImage{
   from{
+    opacity: 0;
     transform: translateX(150%);
   }
 }
+
+
 @media (min-width: 800px) {
   .product-container{
     margin: 1rem 3rem;
     display: grid !important;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
   }
 }
 @media (min-width: 1280px) {
   .product-container{
     margin: 1rem 4rem;
     grid-template-columns: repeat(4, 1fr);
+  }
+  .product:nth-child(1),
+  .product:nth-child(2),
+  .product:nth-child(3),
+  .product:nth-child(4){
+    animation: oddImage .4s ease-in !important;
+  }
+  .product:nth-child(5),
+  .product:nth-child(6),
+  .product:nth-child(7),
+  .product:nth-child(8){
+    animation: evenImage .4s ease-in !important;
   }
 }

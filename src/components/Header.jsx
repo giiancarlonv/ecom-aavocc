@@ -16,7 +16,9 @@ export const Header = (props) => {
     <>
     <header>
       <div className='header-logo'>
-        <img src={logo} alt="aavocc logo" />
+        <Link to='/ecom-aavocc/'><img src={logo} alt="aavocc logo" />
+        </Link>
+        
         <div>
           
           <div className='my-account'>
