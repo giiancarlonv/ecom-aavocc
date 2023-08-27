@@ -7,6 +7,6 @@ aavocc ecommerence - frontend
 ![image](https://github.com/giiancarlonv/ecom-aavocc/assets/53168830/2a8ef51d-8b3f-4f18-a908-0c5a91e63d2d)
 
 
-approched with mobile first design 
+using mobile first design method
 
 demo here - https://giiancarlonv.github.io/ecom-aavocc/
