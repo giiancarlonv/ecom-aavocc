@@ -1,8 +1,12 @@
-# React + Vite
+aavocc ecommerence - frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/giiancarlonv/ecom-aavocc/assets/53168830/85bdc369-2f3c-4000-877f-dbd9dd167479)
 
-Currently, two official plugins are available:
+![image](https://github.com/giiancarlonv/ecom-aavocc/assets/53168830/e9193412-f9fc-49da-b364-cabdb9ae01dd)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/giiancarlonv/ecom-aavocc/assets/53168830/2a8ef51d-8b3f-4f18-a908-0c5a91e63d2d)
+
+
+approched with mobile first design 
+
+demo here - https://giiancarlonv.github.io/ecom-aavocc/
