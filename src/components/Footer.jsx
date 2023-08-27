@@ -31,9 +31,9 @@ export const Footer = () => {
   )
 }
 const Socials = (props) =>{
-  const {image} = props
+  const {image, link} = props
   return(
-    <a>
+    <a href={link}>
       <img src={image} alt={image} />
     </a>
   )

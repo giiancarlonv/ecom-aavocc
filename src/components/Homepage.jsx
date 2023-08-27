@@ -1,7 +1,13 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import mobileModel1 from '../assets/logos/bg_mobile2.webp';
 import desktopModel1 from '../assets/logos/bg_desktop.webp';
 import products from '../data/data';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link, } from 'react-router-dom';
+import featured1 from '../assets/products/jacket.webp';
+import featured2 from '../assets/products/backpack.webp';
+import featured3 from '../assets/products/shirt.webp';
+import featured4 from '../assets/products/pants.webp';
 
 export const Homepage = () => {
   const screenWidth = window.innerWidth;
@@ -18,9 +24,9 @@ export const Homepage = () => {
         <div className='section1-text'>
           <span>The latest gear from</span>
           <h1>aavocc</h1>
-          <button>view collection</button>
+          <Link to='collections'> <button>view collection</button></Link>
         </div>
-        <img src={screenWidth > 800 ? desktopModel1 : mobileModel1} alt="model1" />
+        <LazyLoadImage src={screenWidth > 800 ? desktopModel1 : mobileModel1} alt="model1" />
       </section>
 
       <section className='section2'>
@@ -28,7 +34,7 @@ export const Homepage = () => {
         <div className='popular-items'>
           <PopularProducts />
         </div>
-        <button>view all products</button>
+        <Link to='collections'> <button>view all products</button></Link>
       </section>
 
       <section className={scrollDown ? 'section3': 'section3 inactive'}>
@@ -38,7 +44,10 @@ export const Homepage = () => {
         </div>
 
         <div className="featured-collections-banner">
-          <FeaturedCollections />
+          <FeaturedCollections title='Jacket' image={featured1} />
+          <FeaturedCollections title='Bags' image={featured2} />
+          <FeaturedCollections title='Shirts' image={featured3} />
+          <FeaturedCollections title='Pants' image={featured4} />
         </div>
       </section>
     </main>
@@ -51,7 +60,7 @@ const PopularProducts = () =>{
     <>
     {popularArray.map((product, index) =>(
       <div className='items' key={index}>
-        <img src={product.image} alt="hoodie" />
+        <LazyLoadImage src={product.image} alt="hoodie" />
         <div>
           <h5>{product.name}</h5>
           <span>P {product.price}</span>
@@ -61,21 +70,27 @@ const PopularProducts = () =>{
     </>
   );
 }
-const FeaturedCollections = () => {
-  const featured = products[0].featured;
+const FeaturedCollections = (props) => {
+  const {image, title, click} = props;
+  const ref = useRef(null);
+  const handleClick = () =>{
+    ref.current?.scrollIntoView({behavior: 'smooth'})
+  }
+
   return(
     <>
-    {featured.map((item, index) =>(
-      <div className='featured-container' key={index}>
-        <div>
-          <h3>{item.name}</h3>
+    <div className='featured-container'>
+      <div>
+        <h3>{title}</h3>
+        <Link to='collections'>
           <button>view products </button>
-        </div>
-        <center>
-          <img src={item.image} alt="pants" />
-        </center> 
+        </Link>
+        
       </div>
-    ))}
+      <center>
+        <LazyLoadImage src={image} alt="pants" />
+      </center> 
+    </div>
     </>
   );
 }

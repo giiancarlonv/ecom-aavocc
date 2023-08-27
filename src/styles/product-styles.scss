@@ -69,7 +69,14 @@ $white: #F6F6F6;
     opacity: 0;
   }
 }
-
+.collections{
+  padding: .5rem 0;
+  h1{
+    font-size: 1.5em;
+    margin-left: 1rem;
+    color: $secondary;
+  }
+}
 @media (min-width: 800px) {
   .banner{
     img{
@@ -86,6 +93,11 @@ $white: #F6F6F6;
     grid-auto-rows: auto;
     column-gap: 10px;
   }
+  .collections{
+    h1{
+      margin-left: 3rem;
+    }
+  }
 }
 @media (min-width: 1280px) {
   .banner{
@@ -94,7 +106,7 @@ $white: #F6F6F6;
     }
   }
   .product-container{
-    margin: 1rem 4rem;
+    margin: 1rem 5rem;
     grid-template-columns: repeat(4, 1fr);
   }
   .product:nth-child(1){
@@ -120,5 +132,10 @@ $white: #F6F6F6;
   }
   .product:nth-child(8){
     animation: evenImage .8s ease-in !important;
+  }
+  .collections{
+    h1{
+      margin-left: 5rem;
+    }
   }
 }

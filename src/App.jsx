@@ -9,6 +9,7 @@ import { Mens } from './components/products/Mens';
 import { Womens } from './components/products/Womens';
 import { Errorpage } from './components/Errorpage';
 import { OtherProducts } from './components/products/OtherProducts';
+import { AllProducts } from './components/products/AllProducts';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Header />
         <Routes>
           <Route path='/ecom-aavocc/' element={<Homepage />} />
+          <Route path='ecom-aavocc/collections' element={<AllProducts />} />
           <Route path='ecom-aavocc/mens' element={<Mens />} />
           <Route path='ecom-aavocc/womens' element={<Womens />} />
           <Route path='ecom-aavocc/others' element={<OtherProducts />} />

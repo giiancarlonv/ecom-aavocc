@@ -45,7 +45,6 @@ import featured1 from '../assets/products/jacket.webp';
 import featured2 from '../assets/products/backpack.webp';
 import featured3 from '../assets/products/shirt.webp';
 import featured4 from '../assets/products/pants.webp';
-import featured5 from '../data/data'
 
 const products = [{
   mens: [
@@ -207,31 +206,31 @@ const products = [{
       price: 900
     },{
       id: 'id26',
-      category: 'bag',
+      category: 'shoes',
       img: other6,
       name: 'loafers',
       price: 1500
     },{
       id: 'id27',
-      category: 'bag',
+      category: 'sweater',
       img: other7,
       name: 'graphic sweater ',
       price: 1500
     },{
       id: 'id28',
-      category: 'bag',
+      category: 'sweater',
       img: other8,
       name: 'collar jacket',
       price: 1800
     },{
       id: 'id29',
-      category: 'bag',
+      category: 'shoes',
       img: other9,
       name: 'leather slip-on',
       price: 900
     },{
       id: 'id30',
-      category: 'bag',
+      category: 'sweater',
       img: other10,
       name: 'retro forest color block sweater',
       price: 1800
@@ -270,7 +269,7 @@ const products = [{
       name: 'Jackets',
     },{
       image: featured2,
-      name: 'Backpacks',
+      name: 'Bags',
     },{
       image: featured3,
       name: 'Shirts',
